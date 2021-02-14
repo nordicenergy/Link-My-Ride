@@ -2,10 +2,7 @@
 
 # Description
 
-In the past, Smart Contracts have been integrated with electric vehicles via the use of specialized hardware that plugs directly into the vehicle to obtain real-time data. Not only were these examples restricted to just accessing data, but they also didn't scale well, as each vehicle requires special hardware installed. Tesla electric vehicles have a proper [feature rich API](https://www.teslaapi.io/) that can be leveraged to obtain vehicle data & change the state of the vehicle, which then gives us the ability to create a custom external adapter to connect Smart Contracts to the vehicle via a Chainlink Oracle, giving the Smart Contract full access to the given vehicles data & ability to change its state.
-
-This example demonstrates the design pattern described above, applying it to the use case of the peer to peer sharing economy. In traditional vehicle rental platforms, the vehicle renter relies on the 'brand power' of the company renting the vehicles, and trusts that the bond they submit will be returned if they adhered to the conditions. And as a vehicle owner/provider, going through a trusted centralized platform usually requires sacrificing approximately 30% of revenue earned. But in a peer to peer scenario, both renter and owner are strangers, there is no 'brand power', and there's no guarantee any bond paid will be returned fairly if agreement conditions are met. This is where a Smart contract connected to external data and events can be leveraged to facilitate a digital agreement between a Vehicle Owner & Vehicle Renter in a trust minimized & secure way.
-
+This example demonstrates the design pattern described above, applying it to the use case of the peer to peer sharing economy. In traditional vehicle rental platforms, the vehicle renter relies on the 'brand power' of the company renting the vehicles, and trusts that the bond they submit will be returned if they adhered to the conditions. And as a vehicle owner/provider, going through a trusted centralized platform usually requires sacrificing approximately 30% of revenue earned. But in a peer to peer scenario, both renter and owner are strangers, there is no 'brand power', and there's no guarantee any bond paid will be returned fairly if agreement conditions are met. This is where a Smart contract connected to external data and events can be leveraged to facilitate a digital agreement between a Vehicle Owner & Vehicle Renter in a trust minimized & secure way.In the past, Smart Contracts have been integrated with electric vehicles via the use of specialized hardware that plugs directly into the vehicle to obtain real-time data. Not only were these examples restricted to just accessing data, but they also didn't scale well, as each vehicle requires special hardware installed. Tesla electric vehicles have a proper [feature rich API](https://www.teslaapi.io/) that can be leveraged to obtain vehicle data & change the state of the vehicle, which then gives us the ability to create a custom external adapter to connect Smart Contracts to the vehicle via a Chainlink Oracle, giving the Smart Contract full access to the given vehicles data & ability to change its state.
 
 ## Demo video
 
@@ -16,15 +13,15 @@ This example demonstrates the design pattern described above, applying it to the
 </p>
 
 ## Live Demo (Kovan network)
-https://linkmyri.de/
+https://demo.linkmyride.app/
 
 ## Architecture diagram
-![alt](https://github.com/pappas999/Link-My-Ride/blob/master/src/web-app/public/Link-My-Ride-architecture.png)
+![alt](https://github.com/nordicenergy/Link-My-Ride/blob/master/src/web-app/public/Link-My-Ride-architecture.png)
 
 # Build & Run platform
 This repository includes:
 
-# [Tesla External Adapter](https://github.com/pappas999/Link-My-Ride/tree/master/src/Tesla-External-Adapter)
+# [Tesla External Adapter](https://github.com/nordicenergy/Link-My-Ride/tree/master/src/Tesla-External-Adapter)
 This is a custom external adapter to be used by a Chainlink Node to connect to the Tesla Servers via the [Tesla API](https://www.teslaapi.io/), which then connect to the Tesla Cars. There is some config/parameters required to connect to your own Google Cloud Firestore DB (project-id, collection-name). 
 
 In addition to this, the BASE_URL parameter should be modified according to which Tesla Server endpoint you want to connect to:
@@ -43,7 +40,7 @@ Take note we have added an endpoint '/values' which you can POST to to update th
    "latitude": "123214.23" 
 }
 ```
-# [Web App](https://github.com/pappas999/Link-My-Ride/tree/master/src/web-app)
+# [Web App](https://github.com/nordicenergy/Link-My-Ride/tree/master/src/web-app)
 
 #### Install dependencies
 

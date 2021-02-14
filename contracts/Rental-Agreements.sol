@@ -10,7 +10,7 @@ import "./strings.sol";
 
 //Remix Imports
 //import "https://github.com/smartcontractkit/chainlink/blob/develop/evm-contracts/src/v0.7/ChainlinkClient.sol";
-//import "https://github.com/smartcontractkit/chainlink/blob/develop/evm-contracts/src/v0.7/vendor/Ownable.sol";
+//import "https://github.com/smartcontractkit/chainlink/blob/develop/evm-contracts/src/v0.6/vendor/Ownable.sol";
 //import "https://github.com/smartcontractkit/chainlink/blob/develop/evm-contracts/src/v0.7/interfaces/LinkTokenInterface.sol";
 //import "https://github.com/smartcontractkit/chainlink/blob/master/evm-contracts/src/v0.7/interfaces/AggregatorV3Interface.sol";
 //import "github.com/Arachnid/solidity-stringutils/strings.sol";
@@ -38,7 +38,7 @@ contract RentalAgreementFactory  {
     
     enum  VehicleModels { Model_S, Model_3, Model_X, Model_Y, Cybertruck, Roadster}
     enum  VehicleStatus {PENDING, APPROVED}
-    enum  Currency { ETH, USD, GBP, AUD }
+    enum  Currency { ETH, USD, GBP, EUR }
 
     
     
@@ -76,7 +76,7 @@ contract RentalAgreementFactory  {
 
 
         ethUsdPriceFeed = AggregatorV3Interface(ETH_USD_CONTRACT);
-        audUsdPriceFeed = AggregatorV3Interface(AUD_USD_CONTRACT);
+        audUsdPriceFeed = AggregatorV3Interface(EUR_USD_CONTRACT);
         gbpUsdPriceFeed = AggregatorV3Interface(GBP_USD_CONTRACT);
     }
     
@@ -152,9 +152,9 @@ contract RentalAgreementFactory  {
            int gbpUsdPrice = getLatestGbpUsdPrice();
            return inUsd * (10 ** 8) / uint(gbpUsdPrice);
        }
-       else if (_toCurrency == Currency.AUD) {
-           int audUsdPrice = getLatestAudUsdPrice();
-           return inUsd * (10 ** 8) / uint(audUsdPrice);
+       else if (_toCurrency == Currency.EUR) {
+           int eurUsdPrice = getLatestEurUsdPrice();
+           return inUsd * (10 ** 8) / uint(eurUsdPrice);
        } 
        return _value;   
     } 
@@ -175,9 +175,9 @@ contract RentalAgreementFactory  {
             return fromUsd * uint(gbpUsdPrice) / (10 ** 8);
         }
 
-        else if (_fromCurrency == Currency.AUD) {
-            int audUsdPrice = getLatestAudUsdPrice();
-            return fromUsd * uint(audUsdPrice) / (10 ** 8);
+        else if (_fromCurrency == Currency.EUR) {
+            int eurUsdPrice = getLatestAudUsdPrice();
+            return fromUsd * uint(eurUsdPrice) / (10 ** 8);
         }
         return _value;
     }

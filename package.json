@@ -1,0 +1,29 @@
+{
+  "name": "link-my-ride",
+  "version": "1.0.0",
+  "description": "A decentralized vehicle rental platform",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nordicenergy/Link-My-Ride.git"
+  },
+  "keywords": [
+    "tesla",
+    "platform",
+    "vehicle"
+  ],
+  "author": "nordic_energy <info@nordicenergy.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nordicenergy/Link-My-Ride/issues"
+  },
+  "homepage": "https://github.com/nordicenergy/Link-My-Ride#readme"
+}

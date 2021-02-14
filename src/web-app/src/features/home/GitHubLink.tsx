@@ -7,7 +7,7 @@ export const GitHubLink = () => {
 
     return <Container>
         <Tooltip title="GitHub repo" aria-label="github repo">
-            <a href="https://github.com/pappas999/Link-My-Ride">
+            <a href="https://github.com/nordicenergy/Link-My-Ride">
                 <StyledIconButton>
                     <GitHub />
                 </StyledIconButton>

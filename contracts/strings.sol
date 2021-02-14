@@ -1,6 +1,6 @@
 /*
  * @title String & slice utility library for Solidity contracts.
- * @author Nick Johnson <arachnid@notdot.net>
+ * @author Link My Drive <info@linkmydrive.app>
  *
  * @dev Functionality in this library is largely implemented using an
  *      abstraction called a 'slice'. A slice represents a part of a string -

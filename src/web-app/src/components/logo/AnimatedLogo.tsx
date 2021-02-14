@@ -54,8 +54,8 @@ const TextPart = styled.span`
     position: absolute;
     font-family: Dolphins;
     color: #0EDAE3;
-    -webkit-text-stroke: 2px #FFB00E;
-    text-shadow: ${generateChunkyTextShadow(24, "#245CE8")};
+    -webkit-text-stroke: 2px #9097a2;
+    text-shadow: ${generateChunkyTextShadow(24, "#515761")};
 
     & span:nth-child(1) {
         z-index: 4

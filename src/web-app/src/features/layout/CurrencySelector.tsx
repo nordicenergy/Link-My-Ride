@@ -22,7 +22,7 @@ export const CurrencySelector = () => {
             <MenuItem key={Currency.ETH} value={Currency.ETH}>{getCurrencyString(Currency.ETH)}</MenuItem>
             <MenuItem key={Currency.USD} value={Currency.USD}>{getCurrencyString(Currency.USD)}</MenuItem>
             <MenuItem key={Currency.GBP} value={Currency.GBP}>{getCurrencyString(Currency.GBP)}</MenuItem>
-            <MenuItem key={Currency.AUD} value={Currency.AUD}>{getCurrencyString(Currency.AUD)}</MenuItem>
+            <MenuItem key={Currency.EUR} value={Currency.EUR}>{getCurrencyString(Currency.EUR)}</MenuItem>
         </CurrencySelect>
     </Container>
 }

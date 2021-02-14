@@ -12,7 +12,7 @@ const IconContainer = styled.div`
     transform: translate(-50%, calc(-50% - 36px));
     width: 69.28px;
     height: 40px;
-    background: #245DE8;
+    background: #6b7380;
     color: white;
     display: flex;
     justify-content: center;
@@ -27,7 +27,7 @@ const IconContainer = styled.div`
         height: 0;
         border-left: 34.64px solid transparent;
         border-right: 34.64px solid transparent;
-        border-bottom: 20px solid #245DE8;
+        border-bottom: 20px solid #6b7380;
     }
 
     &::after {
@@ -39,7 +39,7 @@ const IconContainer = styled.div`
         height: 0;
         border-left: 34.64px solid transparent;
         border-right: 34.64px solid transparent;
-        border-top: 20px solid #245DE8;
+        border-top: 20px solid #6b7380;
     }
 `
 
