@@ -23,7 +23,7 @@ export const toSolidityFormat = (amount: string, currency: Currency) => {
         case Currency.GBP:
             result = amountAsBN.multipliedBy(FIAT)
             break
-        case Currency.AUD:
+        case Currency.EUR:
             result = amountAsBN.multipliedBy(FIAT)
             break
     }

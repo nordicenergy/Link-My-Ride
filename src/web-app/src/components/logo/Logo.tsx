@@ -15,9 +15,9 @@ const Container = styled.div`
 
 const TextPart = styled.span`
     position: absolute;
-    font-family: Dolphins;
-    color: #9097a2;
-    -webkit-text-stroke: 1px #68707d;
+    font-family: Oswald;
+    color: #c7cbd1;
+    -webkit-text-stroke: 1px #515761;
 
     & span:nth-child(1) {
         z-index: 4

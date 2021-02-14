@@ -13,8 +13,8 @@ export const getCurrencyString = (currency: Currency) => {
         case Currency.GBP:
             result = "GBP"
             break
-        case Currency.AUD:
-            result = "AUD"
+        case Currency.EUR:
+            result = "EUR"
             break
     }
 

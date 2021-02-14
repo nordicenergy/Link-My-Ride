@@ -52,10 +52,10 @@ const generateChunkyTextShadow = (chunkiness: number, color: string) => {
 
 const TextPart = styled.span`
     position: absolute;
-    font-family: Dolphins;
-    color: #0EDAE3;
-    -webkit-text-stroke: 2px #9097a2;
-    text-shadow: ${generateChunkyTextShadow(24, "#515761")};
+    font-family: Oswald;
+    color: #d5d8dd;
+    -webkit-text-stroke: 2px #383e47;
+    text-shadow: ${generateChunkyTextShadow(24, "#383e47")};
 
     & span:nth-child(1) {
         z-index: 4

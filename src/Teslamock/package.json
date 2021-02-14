@@ -15,7 +15,7 @@
   "main": "teslamock.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"start": "node teslamock.js"
+    "start": "node teslamock.js"
   },
   "repository": {
     "type": "git",

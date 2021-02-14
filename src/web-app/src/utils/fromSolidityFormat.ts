@@ -21,7 +21,7 @@ export const fromSolidityFormat = (amount: BigNumber, currency: Currency) => {
         case Currency.GBP:
             result = amountAsBN.dividedBy(FIAT)
             break
-        case Currency.AUD:
+        case Currency.EUR:
             result = amountAsBN.dividedBy(FIAT)
             break
     }

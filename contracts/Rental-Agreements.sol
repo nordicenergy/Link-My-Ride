@@ -10,7 +10,7 @@ import "./strings.sol";
 
 //Remix Imports
 //import "https://github.com/smartcontractkit/chainlink/blob/develop/evm-contracts/src/v0.7/ChainlinkClient.sol";
-//import "https://github.com/smartcontractkit/chainlink/blob/develop/evm-contracts/src/v0.6/vendor/Ownable.sol";
+//import "https://github.com/smartcontractkit/chainlink/blob/develop/evm-contracts/src/v0.7/vendor/Ownable.sol";
 //import "https://github.com/smartcontractkit/chainlink/blob/develop/evm-contracts/src/v0.7/interfaces/LinkTokenInterface.sol";
 //import "https://github.com/smartcontractkit/chainlink/blob/master/evm-contracts/src/v0.7/interfaces/AggregatorV3Interface.sol";
 //import "github.com/Arachnid/solidity-stringutils/strings.sol";

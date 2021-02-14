@@ -5,7 +5,7 @@ export const theme = createMuiTheme({
     //     type: "dark"
     // },
     typography: {
-        fontFamily: "'Solway', serif"
+        fontFamily: "'Oswald', serif"
     },
     spacing: factor => `${0.25 * factor}rem`,
     palette: {
